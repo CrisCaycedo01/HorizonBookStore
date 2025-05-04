@@ -13,7 +13,7 @@ header {
     min-width: 300px; /* Cambia el ancho mínimo a 300px */
 }
 
-.logo {
+.logo-header {
     width: auto; /* Cambia el ancho del logo */
     height: 71px; /* Cambia la altura del logo */
 }
@@ -28,6 +28,7 @@ header {
     text-decoration: none; /* Elimina el subrayado del texto */
     color: #000; /* Cambia el color del texto del menu */
     font-size: 17px; /* Cambia el tamaño de la fuente */
+    font-weight: 400; /* Cambia el grosor de la fuente a negrita */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     padding: 41px 10px 10px; /* Ajuste del padding */
     position: relative; /* Posiciona el elemento para el pseudo-elemento */
@@ -56,19 +57,43 @@ div {
 .img1 {
     position: absolute; /* Cambia la posición a absoluta */
     width: auto; /* Cambia el ancho a auto */
-    height: 150%; /* Cambia la altura al 150% del contenedor */
+    height: 85%; /* Cambia la altura al 150% del contenedor */
     max-height: 700px; /* Cambia la altura máxima a 700px */
     right: 53%; /* Cambia la posición a la derecha */
-    top: -57%; /* Cambia la posición a la parte superior */
+    top: -45.1%; /* Cambia la posición a la parte superior */
     z-index: 20; /* Cambia el índice z para que esté por encima de otros elementos */
 }
 h1 {
     position: absolute; /* Cambia la posición a absoluta */
     text-align: left; /* Cambia la alineación del texto a la izquierda */
-    font-weight: 900; /* Cambia el peso de la fuente a negrita */
-    right: 9%; /* Cambia la posición a la derecha */
+    font-weight: 900; /* Cambia el grosor de la fuente a negrita */
+    right: 15%; /* Cambia la posición a la derecha */
     top: -42%; /* Cambia la posición a la parte superior */
     color: #333333; /* Cambia el color del texto a un tono más oscuro */
-    font-size: 65px; /* Cambia el tamaño de la fuente */
+    font-size: 55px; /* Cambia el tamaño de la fuente */
 }
 
+h3 {
+    position: absolute; /* Cambia la posición a absoluta */
+    font-weight: 500; /* Cambia el grosor de la fuente a negrita */
+    right: 29.9%; /* Cambia la posición a la derecha */
+    top: 11%; /* Cambia la posición a la parte superior */
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 18px; /* Cambia el tamaño de la fuente */
+    letter-spacing: 3px; /* Cambia el espaciado entre letras */;
+}
+
+.btn {
+    position: absolute; /* Cambia la posición a absoluta */
+    right: 39.4%; /* Cambia la posición a la derecha */
+    top: 20%; /* Cambia la posición a la parte superior */
+    padding: 11px 55px 11px 28px; /* Ajusta el padding: arriba, derecha, abajo, izquierda */
+    font-size: 18px; /* Cambia el tamaño de la fuente */
+    background-color: white; /* Cambia el color de fondo del botón */
+    color: black; /* Cambia el color del texto del botón */
+    font-weight: 800; /* Cambia el grosor de la fuente a negrita */ 
+    border: none; /* Elimina el borde del botón */
+    border-radius: 6px; /* Cambia el radio del borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
