@@ -1,0 +1,74 @@
+body {
+    margin: 0; /* Elimina el margen por defecto del body */
+    font-family: "Roboto", sans-serif; /* Cambia la fuente a Roboto */
+    background-color: #fbfafd; /* Cambia el color de fondo a un tono más claro */
+    
+}
+
+header {
+    display: flex; /* Cambia a flex para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px 50px; /* Cambia el padding para un mejor espaciado */
+    min-width: 300px; /* Cambia el ancho mínimo a 300px */
+}
+
+.logo {
+    width: auto; /* Cambia el ancho del logo */
+    height: 71px; /* Cambia la altura del logo */
+}
+
+.menu {
+    display: flex; /* Cambia a flex para alinear los elementos */
+    gap: 25px; /* Espacio entre los elementos del menú */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado del texto */
+    color: #000; /* Cambia el color del texto del menu */
+    font-size: 17px; /* Cambia el tamaño de la fuente */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    padding: 41px 10px 10px; /* Ajuste del padding */
+    position: relative; /* Posiciona el elemento para el pseudo-elemento */
+}
+
+div {
+    display: flex; /* Cambia a flex para alinear los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 20px 50px; /* Cambia el padding para un mejor espaciado */
+
+}
+.Bloque1 { 
+    background-color: #000000; /* Cambia el color de fondo a un tono más oscuro */
+    width: 100%; /* Cambia el ancho al 100% del contenedor */
+    height: auto; /* Cambia la altura a auto para adaptarse al contenido */
+    min-height: 500px; /* Cambia la altura mínima a 500px */
+    margin: 453px 0 0; /* Cambia el margen superior a 453px */
+    padding: 60px 20px; /* Cambia el padding para un mejor espaciado */
+    position: relative; /* Cambia la posición a relativa */
+    display: flex; /* Cambia a flex para alinear los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+   
+}
+
+.img1 {
+    position: absolute; /* Cambia la posición a absoluta */
+    width: auto; /* Cambia el ancho a auto */
+    height: 150%; /* Cambia la altura al 150% del contenedor */
+    max-height: 700px; /* Cambia la altura máxima a 700px */
+    right: 53%; /* Cambia la posición a la derecha */
+    top: -57%; /* Cambia la posición a la parte superior */
+    z-index: 20; /* Cambia el índice z para que esté por encima de otros elementos */
+}
+h1 {
+    position: absolute; /* Cambia la posición a absoluta */
+    text-align: left; /* Cambia la alineación del texto a la izquierda */
+    font-weight: 900; /* Cambia el peso de la fuente a negrita */
+    right: 9%; /* Cambia la posición a la derecha */
+    top: -42%; /* Cambia la posición a la parte superior */
+    color: #333333; /* Cambia el color del texto a un tono más oscuro */
+    font-size: 65px; /* Cambia el tamaño de la fuente */
+}
+
