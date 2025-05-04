@@ -13,7 +13,7 @@ header {
     min-width: 300px; /* Cambia el ancho mínimo a 300px */
 }
 
-.logo {
+.logo-header {
     width: auto; /* Cambia el ancho del logo */
     height: 71px; /* Cambia la altura del logo */
 }
