@@ -72,3 +72,17 @@ h1 {
     font-size: 65px; /* Cambia el tamaño de la fuente */
 }
 
+.novedades-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.novedad-items img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
