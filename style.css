@@ -195,6 +195,7 @@ h3 {
     border-radius: 3%; /* Bordes redondeados */
     width: 200px; /* Ancho fijo */
     height: auto; /* Altura automática */
+    box-shadow: 4px 4px 24px rgba(0,0,0,0.1); /* Sombra abajo y derecha */
 }
 
 /* ============================
