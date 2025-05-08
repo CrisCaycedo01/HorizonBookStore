@@ -1,106 +1,707 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horizon Bookstore</title>
-    <link rel="stylesheet" href="style.css?v=1.2">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+  <!-- Seccion de head-->
+    <head>
+        <meta charset="UTF-8"> <!-- metaetiqueta para los caracteres especiales -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Metaetiqueta para la vista responsiva -->
+        <title>Horizon Bookstore</title>
+        <link rel="stylesheet" href="style.css?v=1.2"> <!-- Hoja de estilos CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Iconos de Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexión para mejorar el rendimiento de carga de fuentes -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- fuentes de Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fuente roboto de Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet"> <!-- Fuente syne de Google Fonts -->
+    </head>
+    <body>
+      
+      <!-- Seccion de header y menu de navegacion-->
+
     <header>
-        
-        <img src="img/Logo-Horizon.png" alt="Horizon Bookstore Logo" class="logo-header">
-    
-    <nav class="menu">
-        <a href="#">INICIO</a>                                           
+      <img src="img/Logo-Horizon.png" alt="logo de Horizon Bookstore" class="logo-header">
+        <nav class="menu">
+        <a href="#">INICIO</a>
         <a href="#">ACERCA DE</a>
         <a href="#">LIBROS</a>
         <a href="#">MANGAS</a>
         <a href="#">CONTACTO</a>
-        <a href="#"><span class="material-symbols-outlined">search</span> </a> <!-- Icono de busqueda agregado -->   
-        <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a> <!-- Icono de carrito de compras agregado -->
+        <a href="#"><span class="material-symbols-outlined">search</span> </a> <!-- Icono agregado -->   
+        <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a> <!-- Icono de carrito agregado -->
         <a href="#"><span class="material-symbols-outlined">person</span></a> <!-- Icono de usuario agregado -->
-    </nav>
+        </nav>
     </header>
+
+    <!-- Seccion de banner principal-->
+
     <main>
-        <section>
-        <div class="Bloque1">
-        <img src="img/the_guy_she_was_interesed_manga.png" alt="The Guy She Was Interested In Was My Girlfriend" class="img1"> <!-- Imagen de fondo -->
-        <h1>EXPANDE TU MUNDO, <br> UN LIBRO A LA VEZ </h1> <!-- Slogan de la tienda -->
-        <h3>VERSIÓN EBOOK DISPONIBLE</h3> <!--Subtitulo-->
-        <button class="btn" >Comprar</button> <!-- Botón de compra -->
-    </div>
-    </section>
-<!--Aqui agregamos la seccion de novedades para mostrar los libros y comics mas recientes en el catalogo-->
-        <section class="novedades-items">
-            <h3>Novedades</h3>
-            <img src="img/Screenshot 2025-05-03 at 8.48.35 PM.png" alt="novedad"/>
-            <article class="novedad-item">
-            <h5>The art of winning</h5>
-            <p>Bill Belichick</p>
-            <p>$15.00</p>
-            </article>
+      <section>
+          <div class="Bloque1">
+            <img src="img/the_guy_she_was_interesed_manga.png" alt="The Guy She Was Interested In Was My Girlfriend" class="img1"> <!-- Imagen del banner -->
+            <div class="bloque1-textos">
+                <h1>EXPANDE TU MUNDO,<br>UN LIBRO A LA VEZ</h1>
+                <h2>VERSIÓN EBOOK DISPONIBLE</h2>
+                <button class="btn">Comprar</button>
+            </div>
+          </div>
+      </section>
 
+      <!-- Agregamos la seccion de novedades para mostrar los libros y comics mas recientes en el catalogo-->
+      
+      <section>
+        <div class="Texto-tendencia">
+          <h3>TENDENCIA</h3>
+        </div>
+        <div class="explorar-flex">
+          <span class="material-symbols-outlined" id="icon_estrella"> <!-- Icono de estrella agregado -->
+            stars_2
+          </span>
+          <h4 class="Texto-explorar">Explorar</h4>
+        </div>
+      </section>
+      <section class="img-Tendencia">
+        <img src="img/El_esplendor.png" alt="El_esplendor" class="img2" height="357" width="251"/>
+        <img src="img/Victorian_psycho.png" alt="Victorian_psycho" class="img3" height="357" width="251"/>
+        <img src="img/Oposicion.png" alt="Oposicion" class="img4" height="357" width="251"/>
+        <img src="img/dolores_redondo_nash.png" alt="dolores_redondo_nash" class="img5" height="357" width="251"/>
+        <img src="img/Naoya_matsumoto.png" alt="Naoya_matsumoto" class="img6" height="357" width="251"/>
+      </section>
+     
+     <!-- titulo y icono de categorias-->
 
-            <img src="img/Screenshot 2025-05-03 at 8.47.57 PM.png" alt="novedad"/>
-            <article>
-                <h5>On Democracies and Death Cults: Israel and the Future of Civilization</h5>
-                <p>Douglas Murray</p>
-                <p>$20.00</p>
-            </article>
+      <section>
+        <div class="categorias-flex">
+          <span class="material-symbols-outlined" id="icon_carpeta"> <!-- Icono de carpeta agregado -->
+            folder_open
+          </span>
+          <h3 class="Texto-categorias">CATEGORIAS</h3>
+        </div>
+      </section>
 
+      <!-- Seccion de categorias de libros-->
 
-            <img src="img/Screenshot 2025-05-03 at 9.10.02 PM.png" alt="novedad"/>
-            <article>
-                <h5>Death Row (Alibis collection)</h5>
-                <p>Freida McFadden</p>
-                <p>$15.00</p>
-            </article>
-            
-            <img src="img/Screenshot 2025-05-03 at 9.12.37 PM.png" alt="novedad"/>
-            <article>
-                <h5>The Kingdom of Cain</h5>
-                <p>Andrew Klavan</p>
-                <p>$15.00</p>
-            </article>
-        </section>
+      <section>
+        <div class="categorias-grid">
+          <div class="categoria-card">Ciencia ficción</div>
+          <div class="categoria-card">Romance</div>
+          <div class="categoria-card">Ficción</div>
+          <div class="categoria-card">No Ficción</div>
+          <div class="categoria-card">Desarrollo personal</div>
+          <div class="categoria-card">Misterio Thriller</div>
+          <div class="categoria-card">Juvenil</div>
+          <div class="categoria-card">Clasicos</div>
+          <div class="categoria-card">Arte y diseño</div>
+        </div>
+      </section>
 
-        <section class="novedades-items">
+      <!-- Seccion de linea discontinua-->
 
-            <img src="img/Screenshot 2025-05-03 at 9.18.38 PM.png" alt="novedad"/>
-            <article>
-                <h5>Solo Leveling, Vol. 12 (comic)</h5>
-                <p>h-goon</p>
-                <p>$10.00</p>
-            </article>
+      <section>
+        <div class="linea-discontinua"></div>
+      </section>
 
-            <img src="img/Screenshot 2025-05-03 at 9.22.44 PM.png" alt="novedad"/>
-            <article>
-                <h5>Kagurabachi, Vol. 3 (3)</h5>
-                <p>Takeru Hokazono</p>
-                <p>$7.00</p>
-            </article>
+      <!-- Seccion de ciencia ficcion-->
 
+      <section>
+        <div class="categorias-Ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_ciencia-ficcion"> <!-- Icono acompañado del titulo ciencia ficción -->
+            conversion_path
+          </span>
+          <h3 class="Ciencia-ficcion">CIENCIA FICCIÓN</h3>
+        </div>
+      </section>
+      <section class="img-Ciencia-ficcion">
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar"> <!-- Botón de guardar -->
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-            <img src="img/Screenshot 2025-05-03 at 9.29.45 PM.png" alt="novedad"/>
-            <article>
-                <h5>Jujutsu Kaisen, Vol. 26</h5>
-                <p>Gege Akutami </p>
-                <p>$7.00</p>
-            </article>
+        <!-- Card de img 1 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
 
+        <!-- Card de img 2 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
 
-            <img src="img/Screenshot 2025-05-03 at 9.33.36 PM.png" height="357" width="251"/>
-            <article>
-                <h5>Solo Leveling, Vol. 13</h5>
-                <p>h-goon</p>
-                <p>$10.00</p>
-            </article>
-        </section>
+        <!-- Card de img 3 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 4 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Seccion de aventura-->
+
+      <section>
+        <div class="categorias-Ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
+            conversion_path
+          </span>
+          <h3 class="Ciencia-ficcion">AVENTURA</h3>
+        </div>
+      </section>
+      <section class="img-Ciencia-ficcion">
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 1 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 2 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 3 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 4 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de no ficcion-->
+
+      <section>
+        <div class="categorias-Ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
+            conversion_path
+          </span>
+          <h3 class="Ciencia-ficcion">NO FICCIÓN</h3>
+        </div>
+      </section>
+      <section class="img-Ciencia-ficcion">
+        <div class="card-libro">
+          <img src="img/Douglas-murray.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 1 -->
+        <div class="card-libro">
+          <img src="img/Bill_belichick.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 2 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 3 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 4 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de misterio thriller-->
+
+      <section>
+        <div class="categorias-Ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
+            conversion_path
+          </span>
+          <h3 class="Ciencia-ficcion">MISTERIO THRILLER</h3>
+        </div>
+      </section>
+      <section class="img-Ciencia-ficcion">
+        <div class="card-libro">
+          <img src="img/Death_row.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 1 -->
+        <div class="card-libro">
+          <img src="img/Kingdom.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 2 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 3 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 4 -->
+        <div class="card-libro">
+          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion de mangas-->
+
+      <section>
+        <div class="categorias-Ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
+            conversion_path
+          </span>
+          <h3 class="Ciencia-ficcion">MANGAS</h3>
+        </div>
+      </section>
+      <section class="img-Ciencia-ficcion">
+        <div class="card-libro">
+          <img src="img/Kagurabachi_vol3.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 1 -->
+        <div class="card-libro">
+          <img src="img/jujutsu_kaisen_vol26.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 2 -->
+        <div class="card-libro">
+          <img src="img/Solo_leveling_vol1.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 3 -->
+        <div class="card-libro">
+          <img src="img/Solo_leveling_vol13.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card de img 4 -->
+        <div class="card-libro">
+          <img src="img/Oyasumi_punpun.png" alt="media" class="img7" height="357" width="255"/>
+          <div class="card-info">
+            <div class="card-info-top">
+              <span class="precio">$30.00</span>
+              <button class="btn-guardar">
+                <svg width="28" height="28" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/>
+                </svg>
+              </button>
+            </div>
+            <button class="btn-carrito">
+              <svg width="32" height="32" fill="none" stroke="#333" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="9" cy="21" r="1"/>
+                <circle cx="20" cy="21" r="1"/>
+                <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 </body>
 </html>

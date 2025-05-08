@@ -1,131 +1,411 @@
+/* ============================
+   ESTILOS GENERALES QUE MANTIENE LA PÁGINA (BODY)
+=============================== */
+
 body {
     margin: 0; /* Elimina el margen por defecto del body */
-    font-family: "Roboto", sans-serif; /* Cambia la fuente a Roboto */
-    background-color: #fbfafd; /* Cambia el color de fondo a un tono más claro */
-    
+    font-family: "Roboto", sans-serif; /* Fuente principal Roboto */
+    background-color: #fbfafd; /* Fondo claro para toda la página */
 }
 
+/* ============================
+   HEADER Y MENÚ DE NAVEGACIÓN
+=============================== */
+
 header {
-    display: flex; /* Cambia a flex para alinear los elementos */
-    justify-content: space-between; /* Espacio entre los elementos */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
     align-items: center; /* Centra verticalmente los elementos */
-    padding: 20px 50px; /* Cambia el padding para un mejor espaciado */
-    min-width: 300px; /* Cambia el ancho mínimo a 300px */
+    padding: 20px 50px; /* Espaciado interno del header */
+    min-width: 300px; /* Ancho mínimo del header */
 }
 
 .logo-header {
-    width: auto; /* Cambia el ancho del logo */
-    height: 71px; /* Cambia la altura del logo */
+    width: auto; /* Ancho automático */
+    height: 71px; /* Altura fija del logo */
 }
 
 .menu {
-    display: flex; /* Cambia a flex para alinear los elementos */
-    gap: 25px; /* Espacio entre los elementos del menú */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; /* Flex para los enlaces del menú */
+    gap: 25px; /* Espacio entre enlaces */
+    align-items: center; /* Centra verticalmente los enlaces */
 }
 
 .menu a {
-    text-decoration: none; /* Elimina el subrayado del texto */
-    color: #000; /* Cambia el color del texto del menu */
-    font-size: 17px; /* Cambia el tamaño de la fuente */
-    font-weight: 400; /* Cambia el grosor de la fuente a negrita */
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    padding: 41px 10px 10px; /* Ajuste del padding */
-    position: relative; /* Posiciona el elemento para el pseudo-elemento */
+    text-decoration: none; /* Sin subrayado */
+    color: #333333; /* Color del texto */
+    font-size: 17px; /* Tamaño del texto */
+    font-weight: 400; /* Grosor del texto */
+    white-space: nowrap; /* No permite saltos de línea */
+    padding: 10px 10px 10px; /* Espaciado interno */
+    position: relative; /* Para posibles pseudo-elementos */
 }
 
-div {
-    display: flex; /* Cambia a flex para alinear los elementos */
-    justify-content: space-between; /* Espacio entre los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    padding: 20px 50px; /* Cambia el padding para un mejor espaciado */
+/* ============================
+   SECCIÓN PRINCIPAL (Bloque1)
+=============================== */
 
-}
-.Bloque1 { 
-    background-color: #000000; /* Cambia el color de fondo a un tono más oscuro */
-    width: 100%; /* Cambia el ancho al 100% del contenedor */
-    height: auto; /* Cambia la altura a auto para adaptarse al contenido */
-    min-height: 500px; /* Cambia la altura mínima a 500px */
-    margin: 453px 0 0; /* Cambia el margen superior a 453px */
-    padding: 60px 20px; /* Cambia el padding para un mejor espaciado */
-    position: relative; /* Cambia la posición a relativa */
-    display: flex; /* Cambia a flex para alinear los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-   
+div.Bloque1 {
+    background-color: #000000; /* Fondo negro */
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 380px 0 0 0; /* Margen superior grande */
+    padding: 60px 0 0 0; /* Espaciado superior */
+    display: flex; /* Flex para alinear imagen y textos */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 60px; /* Espacio entre imagen y textos */
+    position: relative; /* Para posicionamientos internos */
 }
 
 .img1 {
-    position: absolute; /* Cambia la posición a absoluta */
-    width: auto; /* Cambia el ancho a auto */
-    height: 85%; /* Cambia la altura al 150% del contenedor */
-    max-height: 700px; /* Cambia la altura máxima a 700px */
-    right: 53%; /* Cambia la posición a la derecha */
-    top: -45.1%; /* Cambia la posición a la parte superior */
-    z-index: 20; /* Cambia el índice z para que esté por encima de otros elementos */
-}
-h1 {
-    position: absolute; /* Cambia la posición a absoluta */
-    text-align: left; /* Cambia la alineación del texto a la izquierda */
-    font-weight: 900; /* Cambia el grosor de la fuente a negrita */
-    right: 15%; /* Cambia la posición a la derecha */
-    top: -42%; /* Cambia la posición a la parte superior */
-    color: #333333; /* Cambia el color del texto a un tono más oscuro */
-    font-size: 55px; /* Cambia el tamaño de la fuente */
+    width: 350px; /* Ancho de la imagen */
+    max-width: 90vw; /* Ancho máximo relativo al viewport */
+    height: auto; /* Altura automática */
+    margin-top: -490px; /* Sube la imagen */
+    margin-left: 90px; /* Margen izquierdo */
+    margin-bottom: 0; /* Sin margen inferior */
+    position: static; /* Posición por defecto */
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15); /* Sombra sutil */
+    z-index: 2; /* Superposición */
 }
 
+.bloque1-textos {
+    display: flex; /* Flex para los textos */
+    flex-direction: column; /* En columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: flex-start; /* Alinea a la izquierda */
+    gap: 30px; /* Espacio entre textos */
+    color: #fff; /* Texto blanco */
+}
+
+.bloque1-textos h1 {
+    font-size: 48px; /* Tamaño grande */
+    font-weight: 900; /* Muy negrita */
+    position: relative; /* Para ajustar posición */
+    top: -255px; /* Sube el h1 */
+    margin: 0; /* Sin margen */
+    right: -3px; /* Ajuste horizontal */
+    color: #333; /* Color oscuro */
+}
+
+.bloque1-textos h2 {
+    font-size: 19px; /* Tamaño medio */
+    font-weight: 500; /* Negrita */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    position: relative; /* Para ajustar posición */
+    top: -115px; /* Sube el h2 */
+    margin-top: 0; /* Sin margen superior */
+    right: -4px; /* Ajuste horizontal */
+    color: #fff; /* Texto blanco */
+}
+
+.bloque1-textos .btn {
+    margin-top: 10px; /* Espacio arriba */
+    top: -140px; /* Sube el botón */
+    padding: 11px 55px 11px 28px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño del texto */
+    font-weight: 600; /* Negrita */
+    font-family: "Roboto", sans-serif; /* Fuente Roboto */
+    right: -4px; /* Ajuste horizontal */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    font-weight: 800; /* Muy negrita */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    text-align: left; /* Texto alineado a la izquierda */
+    position: relative; /* Para ajustar posición */
+}
+
+/* ============================
+   TÍTULOS Y BOTONES GENERALES
+=============================== */
+
 h3 {
-    position: absolute; /* Cambia la posición a absoluta */
-    font-weight: 500; /* Cambia el grosor de la fuente a negrita */
-    right: 29.9%; /* Cambia la posición a la derecha */
-    top: 11%; /* Cambia la posición a la parte superior */
-    color: white; /* Cambia el color del texto a blanco */
-    font-size: 18px; /* Cambia el tamaño de la fuente */
-    letter-spacing: 3px; /* Cambia el espaciado entre letras */;
+    color: #3D3C3C; /* Color oscuro */
+    display: flex; /* Flex para alinear */
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 10%; /* Margen superior */
+    margin-bottom: 4px; /* Margen inferior */
+    font-size: 40px; /* Tamaño grande */
+    font-weight: 900; /* Muy negrita */
 }
 
 .btn {
-    position: absolute; /* Cambia la posición a absoluta */
-    right: 39.4%; /* Cambia la posición a la derecha */
-    top: 20%; /* Cambia la posición a la parte superior */
-    padding: 11px 55px 11px 28px; /* Ajusta el padding: arriba, derecha, abajo, izquierda */
-    font-size: 18px; /* Cambia el tamaño de la fuente */
-    background-color: white; /* Cambia el color de fondo del botón */
-    color: black; /* Cambia el color del texto del botón */
-    font-weight: 800; /* Cambia el grosor de la fuente a negrita */ 
-    border: none; /* Elimina el borde del botón */
-    border-radius: 6px; /* Cambia el radio del borde del botón */
+    position: absolute; /* Posición absoluta */
+    flex-wrap: wrap; /* Permite ajuste en varias líneas */
+    right: 39.4%; /* Posición desde la derecha */
+    top: 20%; /* Posición desde arriba */
+    padding: 11px 55px 11px 28px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño del texto */
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    font-weight: 800; /* Muy negrita */
+    border: none; /* Sin borde */
+    border-radius: 6px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de mano */
+    text-align: left; /* Texto alineado a la izquierda */
+}
+
+/* ============================
+   SECCIÓN EXPLORAR
+=============================== */
+
+.explorar-flex {
+    display: flex; /* Flex para alinear */
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 1%; /* Margen superior */
+    margin-bottom: 4%; /* Margen inferior */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.Texto-explorar {
+    margin: 0; /* Sin margen */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: 400; /* Negrita */
+    color: #676767; /* Color gris oscuro */
+}
+
+#icon_estrella {
+    color: #676767; /* Color gris oscuro */
+    display: flex; /* Flex para alinear */
+}
+
+/* ============================
+   SECCIÓN TENDENCIAS
+=============================== */
+
+.img-Tendencia {
+    display: flex; /* Flex para alinear imágenes */
+    flex-wrap: wrap; /* Permite ajuste de imágenes */
+    justify-content: center; /* Centra horizontalmente */
+    object-fit: contain; /* Ajusta la imagen al contenedor */
+    grid-template-columns: repeat(5, 1fr); /* 5 columnas (no aplica en flex) */
+    gap: 50px; /* Espacio entre imágenes */
+    margin-top: 0px; /* Sin margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+    margin-right: 90px; /* Margen derecho */
+    margin-left: 90px; /* Margen izquierdo */
+    padding: 65px 0px 65px 0px; /* Espaciado interno */
+    border: 2px dashed #000000; /* Borde discontinuo */
+    border-radius: 4%; /* Bordes redondeados */
+}
+
+.img2, .img3, .img4, .img5, .img6 {
+    border-radius: 3%; /* Bordes redondeados */
+    width: 200px; /* Ancho fijo */
+    height: auto; /* Altura automática */
+}
+
+/* ============================
+   SECCIÓN CATEGORÍAS
+=============================== */
+
+.categorias-flex {
+    display: flex; /* Flex para alinear icono y texto */
+    margin: 320px 0 100px 0; /* Margen superior y inferior */
+    gap: 10px; /* Espacio entre icono y texto */
+    margin-left: 85px; /* Margen izquierdo */
+}
+
+.Texto-categorias {
+    margin: 0; /* Sin margen */
+    color: #3D3C3C; /* Color oscuro */
+    font-size: 40px; /* Tamaño grande */
+    font-weight: 900; /* Muy negrita */
+}
+
+#icon_carpeta {
+    color: #3D3C3C; /* Color oscuro */
+    font-size: 38px; /* Tamaño del icono */
+    display: flex; /* Flex para alinear */
+    margin-top: 4px; /* Margen superior */
+}
+
+.categorias-grid {
+    display: grid; /* Grid para las tarjetas */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 40px 40px; /* Espacio entre filas y columnas */
+    margin: 40px 60px 245px 60px; /* Margen alrededor del grid */
+}
+
+.categoria-card {
+    background: #fff; /* Fondo blanco */
+    border: 3px solid #444; /* Borde oscuro */
+    border-radius: 16px; /* Bordes redondeados */
+    box-shadow: 12px 16px 0px 0px #000; /* Sombra */
+    font-size: 2rem; /* Tamaño del texto */
+    font-family: "Syne", sans-serif; /* Fuente Syne */
+    color: #333; /* Color oscuro */
+    text-align: center; /* Centra el texto */
+    padding: 32px 0; /* Espaciado interno */
+    font-weight: 400; /* Negrita */
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+}
+
+.categoria-card:hover {
+    transform: translateY(-4px) scale(1.03); /* Efecto de elevación */
+    box-shadow: 16px 24px 0px 0px #000; /* Sombra más intensa */
+}
+
+.linea-discontinua {
+    border-top: 2px dashed #000000; /* Línea discontinua */
+    width: 90%; /* Ancho de la línea */
+    margin: 0 auto 60px auto; /* Centra la línea y margen inferior */
+}
+
+/* ============================
+   SECCIÓN CIENCIA FICCIÓN
+=============================== */
+
+.categorias-Ciencia-ficcion {
+    display: flex; /* Flex para alinear icono y título */
+    margin: 100px 0 55px 0; /* Margen superior e inferior */
+    gap: 10px; /* Espacio entre icono y texto */
+    margin-left: 75px; /* Margen izquierdo */
+}
+
+.Ciencia-ficcion {
+    margin: 0; /* Sin margen */
+    color: #3D3C3C; /* Color oscuro */
+    font-size: 40px; /* Tamaño grande */
+    font-weight: 900; /* Muy negrita */
+}
+
+#icon_ciencia-ficcion {
+    color: #3D3C3C; /* Color oscuro */
+    font-size: 38px; /* Tamaño del icono */
+    display: flex; /* Flex para alinear */
+    margin-top: 4px; /* Margen superior */
+}
+
+.img-Ciencia-ficcion {
+    display: flex; /* Flex para las tarjetas */
+    flex-wrap: wrap; /* Permite ajuste de tarjetas */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 50px; /* Espacio entre tarjetas */
+    margin: 0 90px 40px 90px; /* Margen alrededor */
+}
+
+.img7, .img8, .img9, .img10, .img11 {
+    border-radius: 5%; /* Bordes redondeados */
+    width: 210px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+    box-shadow: 4px 4px 24px rgba(0,0,0,0.1); /* Sombra abajo y derecha */
+}
+
+.card-info {
+    display: flex; /* Cambia a flex para alinear los elementos */
+    flex-direction: column; /* Cambia la dirección a columna */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 10px; /* Espacio entre los elementos */
+    margin-top: 16px; /* Cambia el margen superior a 16px */
+}
+
+.card-info-top {
+    display: flex; /* Cambia a flex para alinear los elementos */
+    align-items: center; /* Alinea los elementos al centro */
+    gap: 16px; /* Espacio entre los elementos */
+    margin-bottom: 6px; /* Cambia el margen inferior a 6px */
+}
+
+.precio {
+    border: 3px solid #444; /* Cambia el color del borde a un tono más oscuro */
+    border-radius: 32px; /* Cambia el radio del borde de los precios */
+    padding: 8px 32px; /* Cambia el padding: arriba, derecha, abajo, izquierda */
+    font-size: 1.6rem; /* Cambia el tamaño de la fuente */
+    font-family: "Syne", sans-serif; /* Cambia la fuente a Syne */
+    color: #333; /* Cambia el color del texto a un tono más oscuro */
+    background: #fff; /* Cambia el color de fondo a blanco */
+    font-weight: 400; /* Cambia el grosor de la fuente a negrita */
+    display: flex; /* Cambia a flex para alinear los elementos */
+    align-items: center; /* Alinea los elementos al centro */
+}
+
+.btn-guardar {
+    border: 3px solid #444; /* Cambia el color del borde a un tono más oscuro */
+    border-radius: 32px; /* Cambia el radio del borde de los precios */
+    background: #fff; /* Cambia el color de fondo a blanco */
+    padding: 4px 16px; /* Cambia el padding: arriba, derecha, abajo, izquierda */
     cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex; /* Cambia a flex para alinear los elementos */
+    align-items: center; /* Alinea los elementos al centro */
+    transition: box-shadow 0.2s; /* Cambia la transición para un efecto suave */
 }
 
-.novedades-items {
+.btn-guardar:hover {
+    box-shadow: 0 2px 8px #0002; /* Cambia la sombra al pasar el mouse */
+}
+
+.btn-carrito {
+    width: 100%; /* Cambia el ancho al 100% del contenedor */
+    background: #FFC72C; /* Cambia el color de fondo a un tono más claro */
+    border: 3px solid #444; /* Cambia el color del borde a un tono más oscuro */
+    border-radius: 32px; /* Cambia el radio del borde de los precios */
+    padding: 8px 0; /* Cambia el padding: arriba, derecha, abajo, izquierda */
+    margin-top: 4px; /* Cambia el margen superior a 4px */
+    cursor: pointer;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin-bottom: 40px;
-    padding: 20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #afafaf;
+    transition: box-shadow 0.2s;
 }
 
-.novedad-items img {
-    width: 150px;
-    height: 100px;
-    border-radius: 8px;
+.btn-carrito:hover {
+    box-shadow: 0 2px 8px #0002;
 }
 
-.novedades-items article {
-    text-align: center;
-    max-width: 150px;
-    font-family: Roboto, sans-serif;
+/* =======================
+   MEDIA QUERIES
+   ======================= */
+
+/* Escritorio grande */
+@media (min-width: 1600px) {
+    .img1 { width: 400px; }
+    .bloque1-textos h1 { font-size: 56px; }
+    .bloque1-textos h2 { font-size: 24px; }
+    .bloque1-textos .btn { font-size: 20px; padding: 14px 60px 14px 32px; }
 }
 
-.novedades-items h3 {
-    font-family: "Al Nile",sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+/* Escritorio y portátiles medianos */
+@media (max-width: 1200px) {
+    .img1 { width: 280px; }
+    .bloque1-textos h1 { font-size: 32px; }
+    .bloque1-textos h2 { font-size: 16px; }
+    .bloque1-textos .btn { font-size: 14px; padding: 8px 30px 8px 15px; }
+}
+
+/* Tablets y pantallas pequeñas */
+@media (max-width: 900px) {
+    div.Bloque1 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 0;
+    }
+    .bloque1-textos {
+        align-items: center;
+        text-align: center;
+    }
+    .img1 {
+        width: 70vw;
+        max-width: 250px;
+    }
+    .bloque1-textos h1 { font-size: 24px; }
+    .bloque1-textos h2 { font-size: 14px; }
+    .bloque1-textos .btn { font-size: 14px; padding: 8px 20px; }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    .img1 {
+        width: 90vw;
+        max-width: 180px;
+    }
+    .bloque1-textos h1 { font-size: 18px; }
+    .bloque1-textos h2 { font-size: 12px; }
+    .bloque1-textos .btn { font-size: 12px; padding: 6px 10px; }
+    div.Bloque1 {
+        gap: 16px;
+        padding: 16px 0;
+    }
 }
