@@ -1,0 +1,70 @@
+<!doctype html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" /> <!-- Importando iconos de Google Fonts -->
+        <title>Payment page</title>
+
+    </head>
+    <body>
+    <header>
+        <img src="img/Logo-Horizon.png" alt="logo de Horizon Bookstore" class="logo-header">
+        <nav class="menu">
+            <a href="index.html">INICIO</a>
+            <a href="#">ACERCA DE</a>
+            <a href="#">LIBROS</a>
+            <a href="#">MANGAS</a>
+            <a href="#">CONTACTO</a>
+            <a href="#"><span class="material-symbols-outlined">search</span> </a> <!-- Icono agregado -->
+            <a href="#"><span class="material-symbols-outlined">shopping_cart</span></a> <!-- Icono de carrito agregado -->
+            <a href="#"><span class="material-symbols-outlined">person</span></a> <!-- Icono de usuario agregado -->
+        </nav>
+    </header>
+    
+    <section class="payment-section">
+        <h2> Carrito de compra</h2>
+        <p class="texto-mensaje">Aqui estan tus articulos</p>
+    </section>
+
+    <section class="articulos-pagar">
+        <div class="contenedor-pago">
+            <div class="contenedor-libros">
+                <div class="libro-card">
+                    <img src="img/img-media.png" alt="Libro 1" class="img7" height="357" width="255"/>
+                    <div class="libro-info">
+                        <p>Título del libro 1</p>
+                        <p class="precio">$30.00</p>
+                    </div>
+                </div>
+
+                <div class="libro-card">
+                    <img src="img/Bill_belichick.png" alt="Libro 2" class="img7" height="357" width="255"/>
+                    <div class="libro-info">
+                        <p>Título del libro 2</p>
+                        <p class="precio">$30.00</p>
+                    </div>
+                </div>
+
+                <div class="libro-card">
+                    <img src="img/Solo_leveling_vol13.png" alt="Libro 3" class="img7" height="357" width="255"/>
+                    <div class="libro-info">
+                        <p>Título del libro 3</p>
+                        <p class="precio">$30.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel-resumen">
+                <h3>Resumen de compra</h3>
+                <p>Subtotal: $90.00</p>
+                <p>Envío: $5.00</p>
+                <p>Total: <strong>$95.00</strong></p>
+                <button class="btn-pagar">Pagar ahora</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
