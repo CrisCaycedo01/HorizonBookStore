@@ -25,8 +25,7 @@
     </header>
     
     <section class="payment-section">
-        <h2> Carrito de compra</h2>
-        <p class="texto-mensaje">Aqui estan tus articulos</p>
+        <h2>Articulos</h2>
     </section>
 
     <section class="articulos-pagar">
@@ -57,14 +56,59 @@
                 </div>
             </div>
 
-            <div class="panel-resumen">
-                <h3>Resumen de compra</h3>
-                <p>Subtotal: $90.00</p>
-                <p>Envío: $5.00</p>
-                <p>Total: <strong>$95.00</strong></p>
-                <button class="btn-pagar">Pagar ahora</button>
+            <div class="panel-resumen" id="resumen-carrito">
+            <!-- Aquí se mostrará el resumen dinámico -->
             </div>
         </div>
     </section>
+<script>
+// Selecciona el contenedor donde se mostrarán los libros
+const contenedorLibros = document.querySelector('.contenedor-libros');
+const resumenCarrito = document.getElementById('resumen-carrito');
+let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+function renderCarrito() {
+  contenedorLibros.innerHTML = '';
+  let subtotal = 0;
+
+  carrito.forEach((libro, idx) => {
+    subtotal += parseFloat(libro.precio);
+    contenedorLibros.innerHTML += `
+      <div class="libro-card">
+        <img src="${libro.img}" alt="${libro.titulo}" class="img7" height="120" width="80"/>
+        <div class="libro-info">
+          <p>${libro.titulo}</p>
+          <p class="precio">$${libro.precio}</p>
+          <button class="btn-eliminar" data-idx="${idx}">Eliminar</button>
+        </div>
+      </div>
+    `;
+  });
+
+  // Resumen dinámico
+  let envio = carrito.length > 0 ? 5 : 0;
+  let total = subtotal + envio;
+  resumenCarrito.innerHTML = `
+    <h3>Resumen de compra</h3>
+    <p>Subtotal: $${subtotal.toFixed(2)}</p>
+    <p>Envío: $${envio.toFixed(2)}</p>
+    <p>Total: <strong>$${total.toFixed(2)}</strong></p>
+    <button class="btn-pagar"${carrito.length === 0 ? ' disabled' : ''}>Pagar ahora</button>
+  `;
+
+  // Botón eliminar
+  document.querySelectorAll('.btn-eliminar').forEach(btn => {
+    btn.addEventListener('click', function() {
+      carrito.splice(this.dataset.idx, 1);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+      renderCarrito();
+    });
+  });
+}
+
+renderCarrito();
+
+
+</script>
 </body>
 </html>
