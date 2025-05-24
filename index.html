@@ -11,8 +11,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- fuentes de Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> <!-- Fuente roboto de Google Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet"> <!-- Fuente syne de Google Fonts -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!--LOGOS DE FACEBOOK Y DEMAS NESTOR-->
-    </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- Font Awesome para iconos sociales -->
+      </head>
     <body>
       
       <!-- Seccion de header y menu de navegacion-->
@@ -21,9 +21,9 @@
       <img src="img/Logo-Horizon.png" alt="logo de Horizon Bookstore" class="logo-header">
         <nav class="menu" id="menu">
         <a href="#menu">INICIO</a>
-        <a href="#">ACERCA DE</a>
+        <a href="acerca_de.html">ACERCA DE</a>
         <a href="#categorias">LIBROS</a>
-        <a href="#mangas">MANGAS</a>
+        <a href="#Mangas">MANGAS</a>
         <a href="#footer">CONTACTO</a>
         <a href="#"><span class="material-symbols-outlined">search</span> </a> <!-- Icono agregado -->   
         <a href="payment.html"><span class="material-symbols-outlined">shopping_cart</span></a> <!-- Icono de carrito agregado -->
@@ -44,7 +44,7 @@
             </div>
           </div>
       </section>
-    </main>
+
       <!-- Agregamos la seccion de novedades para mostrar los libros y comics mas recientes en el catalogo-->
       
       <section>
@@ -68,12 +68,12 @@
      
      <!-- titulo y icono de categorias-->
 
-      <section id="categorias">
+      <section>
         <div class="categorias-flex">
           <span class="material-symbols-outlined" id="icon_carpeta"> <!-- Icono de carpeta agregado -->
             folder_open
           </span>
-          <h3 class="Texto-categorias">CATEGORIAS</h3>
+          <h3 class="Texto-categorias" id="categorias">CATEGORIAS</h3>
         </div>
       </section>
 
@@ -81,17 +81,17 @@
 
       <section>
         <div class="categorias-grid">
-          <div class="categoria-card">Ciencia ficción</div>
-          <div class="categoria-card">Romance</div>
-          <div class="categoria-card">Ficción</div>
-          <div class="categoria-card">No Ficción</div>
-          <div class="categoria-card">Desarrollo personal</div>
-          <div class="categoria-card">Misterio Thriller</div>
-          <div class="categoria-card">Juvenil</div>
-          <div class="categoria-card">Clasicos</div>
-          <div class="categoria-card">Arte y diseño</div>
+          <a href="#Ciencia-ficcion" class="categoria-card">Ciencia ficción</a>
+          <a href="#" class="categoria-card">Romance</a>
+          <a href="#" class="categoria-card">Ficción</a>
+          <a href="#No-ficcion" class="categoria-card">No Ficción</a>
+          <a href="#" class="categoria-card">Desarrollo personal</a>
+          <a href="#Misterio-thriller" class="categoria-card">Misterio Thriller</a>
+          <a href="#Mangas" class="categoria-card">Juvenil</a>
+          <a href="#" class="categoria-card">Clasicos</a>
+          <a href="#" class="categoria-card">Arte y diseño</a>
         </div>
-      </section>
+</section>
 
       <!-- Seccion de linea discontinua-->
 
@@ -106,12 +106,12 @@
           <span class="material-symbols-outlined" id="icon_ciencia-ficcion"> <!-- Icono acompañado del titulo ciencia ficción -->
             conversion_path
           </span>
-          <h3 class="Ciencia-ficcion">CIENCIA FICCIÓN</h3>
+          <h3 class="Ciencia-ficcion" id="Ciencia-ficcion">CIENCIA FICCIÓN</h3>
         </div>
       </section>
       <section class="img-Ciencia-ficcion">
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Dune.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -133,7 +133,7 @@
 
         <!-- Card de img 1 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/1984.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -155,7 +155,7 @@
 
         <!-- Card de img 2 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/El_problema_de_los_3_cuerpos.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -177,7 +177,7 @@
 
         <!-- Card de img 3 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Neuromancer.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -199,7 +199,7 @@
 
         <!-- Card de img 4 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Cronicas.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -224,7 +224,7 @@
 
       <section>
         <div class="categorias-Ciencia-ficcion">
-          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
+          <span class="material-symbols-outlined" id="icon_Aventura">
             conversion_path
           </span>
           <h3 class="Ciencia-ficcion">AVENTURA</h3>
@@ -232,7 +232,7 @@
       </section>
       <section class="img-Ciencia-ficcion">
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/El_conde_Montecristo.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -254,7 +254,7 @@
 
         <!-- Card de img 1 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Minas_del_rey_Salomón.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -276,7 +276,7 @@
 
         <!-- Card de img 2 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Los_3_mosqueteros.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -298,7 +298,7 @@
 
         <!-- Card de img 3 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/aventuras-de-tom-sawyer.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -320,7 +320,7 @@
 
         <!-- Card de img 4 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Viaje_centro_de_la_tierra.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -345,15 +345,15 @@
 
       <section>
         <div class="categorias-Ciencia-ficcion">
-          <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
-            conversion_path
+          <span class="material-symbols-outlined" id="icon_no-ficcion">
+            conversion_path 
           </span>
-          <h3 class="Ciencia-ficcion">NO FICCIÓN</h3>
+          <h3 class="Ciencia-ficcion" id="No-ficcion">NO FICCIÓN</h3>
         </div>
       </section>
       <section class="img-Ciencia-ficcion">
         <div class="card-libro">
-          <img src="img/Douglas_murray.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Douglas-murray.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -397,7 +397,7 @@
 
         <!-- Card de img 2 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Sapiens.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -419,7 +419,7 @@
 
         <!-- Card de img 3 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Historia_del_tiempo.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -441,7 +441,7 @@
 
         <!-- Card de img 4 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Como_influir_sobre_las_personas.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -469,7 +469,7 @@
           <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
             conversion_path
           </span>
-          <h3 class="Ciencia-ficcion">MISTERIO THRILLER</h3>
+          <h3 class="Ciencia-ficcion" id="Misterio-thriller">MISTERIO THRILLER</h3>
         </div>
       </section>
       <section class="img-Ciencia-ficcion">
@@ -518,7 +518,7 @@
 
         <!-- Card de img 2 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Misterio_Mujer.jpg" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -540,7 +540,7 @@
 
         <!-- Card de img 3 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/El_fervor.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -562,7 +562,7 @@
 
         <!-- Card de img 4 -->
         <div class="card-libro">
-          <img src="img/img-media.png" alt="media" class="img7" height="357" width="255"/>
+          <img src="img/Las_Vulnerabilidades.png" alt="media" class="img7" height="357" width="255"/>
           <div class="card-info">
             <div class="card-info-top">
               <span class="precio">$30.00</span>
@@ -585,12 +585,12 @@
 
       <!-- Seccion de mangas-->
 
-      <section id="mangas">
+      <section>
         <div class="categorias-Ciencia-ficcion">
           <span class="material-symbols-outlined" id="icon_ciencia-ficcion">
             conversion_path
           </span>
-          <h3 class="Ciencia-ficcion">MANGAS</h3>
+          <h3 class="Ciencia-ficcion" id="Mangas">MANGAS</h3>
         </div>
       </section>
       <section class="img-Ciencia-ficcion">
@@ -703,25 +703,26 @@
           </div>
         </div>
       </section>
-
+    </main>
+    
       <footer class="footer" id="footer">
        <div class="contenedor_foot">
           <div class="footer-row">
               <div class="footer-links">
-                <h4>Horizon Book store</h4>
+                <h4>Horizon Book Store</h4>
                 <ul>
-                  <li><a href="#">Nosotros</a></li>
-                  <li><a href="#">Nuestor servicios</a></li>
-                  <li><a href="#">Politica de privacidad</a></li>
+                  <li><a href="acerca_de.html">Nosotros</a></li>
+                  <li><a href="nuestros_servicios.html">Nuestros servicios</a></li>
+                  <li><a href="politica_de_privacidad.html">Politica de privacidad</a></li>
                 </ul>
                 
               </div>
               <div class="footer-links">
                 <h4>Ayuda</h4>
                 <ul>
-                  <li><a href="#">Preguntas</a></li>
-                  <li><a href="#">Envios</a></li>
-                  <li><a href="#">Quejas</a></li>
+                  <li><a href="pqr.html">Preguntas</a></li>
+                  <li><a href="envios.html">Envios</a></li>
+                  <li><a href="pqr.html">Quejas</a></li>
                 </ul>
                 
               </div>
@@ -732,11 +733,10 @@
                   <a href="#"><i class="fab fa-instagram"></i></a>
                   <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-                
               </div>
           </div>
        </div>
       </footer>
-    
-</body>
+      <script src="Funcionalidades.js"></script>
+  </body>
 </html>
