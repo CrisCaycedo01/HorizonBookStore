@@ -263,152 +263,152 @@ h3 {
 }
 
 .contenido {
-  max-width: 480px;
+  max-width: 480px; /* Ancho máximo */
   margin: 40px auto 32px auto; /* Centrada y menos margen superior */
-  padding: 28px 16px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  padding: 28px 16px; /* Espaciado interno */
+  background: #fff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04); /* Sombra */
+  display: flex; /* Flex para alinear */
+  flex-direction: column; /* En columna */
+  gap: 16px; /* Espacio entre elementos */
 }
 
 .contenido h2, .contenido h3 {
-  font-weight: 500;
-  margin-bottom: 14px;
-  color: #222;
-  letter-spacing: 0.5px;
-  text-align: center;
+  font-weight: 500; /* Grosor de la fuente */
+  margin-bottom: 14px; /* Margen inferior */
+  color: #222; /* Color oscuro */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto */
 }
 
 .contenido h3 {
-  margin-top: 24px;
-  font-size: 1.1em;
+  margin-top: 24px; /* Margen superior */
+  font-size: 1.1em; /* Tamaño del texto */
 }
 
 .contenido ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 0; /* Sin margen */
+  display: flex; /* Flex para alinear */
   flex-direction: column;
   gap: 10px;
 }
 
 .contenido li {
-  color: #444;
-  font-size: 1em;
-  background: #f5f5f5;
-  border-radius: 7px;
-  padding: 10px 14px;
-  font-weight: 400;
-  letter-spacing: 0.1px;
+  color: #444; /* Color gris oscuro */
+  font-size: 1em; /* Tamaño del texto */
+  background: #f5f5f5; /* Fondo gris claro */
+  border-radius: 7px; /* Bordes redondeados */
+  padding: 10px 14px; /* Espaciado interno */
+  font-weight: 400; /* Grosor de la fuente */
+  letter-spacing: 0.1px; /* Espaciado entre letras */
 }
 
 .contenido li strong {
-  color: #222;
-  font-weight: 500;
+  color: #222; /* Color oscuro */
+  font-weight: 500; /* Grosor de la fuente */
 }
 
 .contenido p {
-  color: #444;
-  font-size: 1em;
-  margin-bottom: 10px;
-  line-height: 1.5;
+  color: #444; /* Color gris oscuro */
+  font-size: 1em; /* Tamaño del texto */
+  margin-bottom: 10px; /* Margen inferior */
+  line-height: 1.5; /* Interlineado */
 }
 
 /* Solo afecta a la política de privacidad */
 .contenido.privacidad {
-  max-width: 480px;
-  margin: 40px auto 32px auto;
-  padding: 28px 16px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  max-width: 480px; /* Ancho máximo */
+  margin: 40px auto 32px auto; /* Centrada y menos margen superior */
+  padding: 28px 16px; /* Espaciado interno */
+  background: #fff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04); /* Sombra */
+  display: flex; /* Flex para alinear */
+  flex-direction: column; /* En columna */
+  gap: 16px; /* Espacio entre elementos */
 }
 
 .contenido.privacidad h2 {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #222;
-  margin: 0 0 18px 0;
-  letter-spacing: 0.5px;
-  text-align: center;
+  font-size: 1.5em; /* Tamaño grande */
+  font-weight: 600; /* Grosor de la fuente */
+  color: #222; /* Color oscuro */
+  margin: 0 0 18px 0; /* Margen inferior */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto */
 }
 
 .contenido.privacidad ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 10px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  list-style: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 0 0 10px 0; /* Sin margen */
+  display: flex; /* Flex para alinear */
+  flex-direction: column; /* En columna */
+  gap: 10px; /* Espacio entre elementos */
 }
 
 .contenido.privacidad li {
-  color: #444;
-  font-size: 1em;
-  background: #f5f5f5;
-  border-radius: 7px;
-  padding: 10px 14px;
-  font-weight: 400;
-  letter-spacing: 0.1px;
+  color: #444; /* Color gris oscuro */
+  font-size: 1em; /* Tamaño del texto */
+  background: #f5f5f5; /* Fondo gris claro */
+  border-radius: 7px; /* Bordes redondeados */
+  padding: 10px 14px; /* Espaciado interno */
+  font-weight: 400; /* Grosor de la fuente */
+  letter-spacing: 0.1px; /* Espaciado entre letras */
 }
 
 .contenido.privacidad p {
-  color: #444;
-  font-size: 1em;
-  margin-bottom: 10px;
-  line-height: 1.5;
-  text-align: center;
+  color: #444; /* Color gris oscuro */
+  font-size: 1em; /* Tamaño del texto */
+  margin-bottom: 10px; /* Margen inferior */
+  line-height: 1.5; /* Interlineado */
+  text-align: center; /* Centra el texto */
 }
 /* Estilo solo para la sección PQR */
       .contenido.pqr {
-        max-width: 480px;
-        margin: 40px auto 32px auto;
-        padding: 28px 16px;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        max-width: 480px; /* Ancho máximo */
+        margin: 40px auto 32px auto; /* Centrada y menos margen superior */
+        padding: 28px 16px; /* Espaciado interno */
+        background: #fff; /* Fondo blanco */
+        border-radius: 12px; /* Bordes redondeados */
+        box-shadow: 0 2px 12px rgba(0,0,0,0.04); /* Sombra */
+        display: flex; /* Flex para alinear */
+        flex-direction: column; /* En columna */
+        gap: 16px; /* Espacio entre elementos */
       }
       .contenido.pqr h2 {
-        font-size: 1.5em;
-        font-weight: 600;
-        color: #222;
-        margin: 0 0 16px 0;
-        letter-spacing: 0.5px;
-        text-align: center;
+        font-size: 1.5em; /* Tamaño grande */
+        font-weight: 600; /* Grosor de la fuente */
+        color: #222; /* Color oscuro */
+        margin: 0 0 16px 0; /* Margen inferior */
+        letter-spacing: 0.5px; /* Espaciado entre letras */
+        text-align: center; /* Centra el texto */
       }
       .contenido.pqr ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 10px 0;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        list-style: none; /* Sin viñetas */
+        padding: 0; /* Sin padding */
+        margin: 0 0 10px 0; /* Sin margen */
+        display: flex; /* Flex para alinear */
+        flex-direction: column; /* En columna */
+        gap: 10px; /* Espacio entre elementos */
       }
       .contenido.pqr li {
-        background: #f5f5f5;
-        border-radius: 7px;
-        padding: 10px 14px;
-        color: #444;
-        font-size: 1em;
+        background: #f5f5f5; /* Fondo gris claro */
+        border-radius: 7px; /* Bordes redondeados */
+        padding: 10px 14px; /* Espaciado interno */
+        color: #444; /* Color gris oscuro */
+        font-size: 1em; /* Tamaño del texto */
       }
-      .contenido.pqr li strong {
-        color: #222;
-        font-weight: 500;
+      .contenido.pqr li strong { 
+        color: #222; /* Color oscuro */
+        font-weight: 500; /* Grosor de la fuente */
       }
       .contenido.pqr p {
-        text-align: center;
-        color: #444;
-        margin: 0;
+        text-align: center; /* Centra el texto */
+        color: #444; /* Color gris oscuro */
+        margin: 0; /* Sin margen */
       }
 /* ============================
    ESTILOS DEL BANNER
@@ -516,7 +516,7 @@ h3 {
     border-radius: 32px; /* Cambia el radio del borde de los precios */
     padding: 8px 0; /* Cambia el padding: arriba, derecha, abajo, izquierda */
     margin-top: 4px; /* Cambia el margen superior a 4px */
-    cursor: pointer;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -530,70 +530,70 @@ h3 {
    PÁGINA DE PAGO (payment.html)
 =============================== */
 .payment-section {
-    text-align: center;
+    text-align: center; /* Centra el texto */
 }
 .contenedor-pago {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-    flex-wrap: wrap;
+    display: flex; /* Flex para alinear los elementos */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    align-items: flex-start; /* Alinea verticalmente a la izquierda */
+    gap: 40px; /* Espacio entre elementos */
+    max-width: 1100px; /* Ancho máximo */
+    margin: 40px auto; /* Centra horizontalmente */
+    padding: 0 20px; /* Espaciado interno */
+    flex-wrap: wrap; /* Permite ajuste de elementos */
 }
 
 .contenedor-libros {
-    max-width: 900px;
-    margin: 0 auto 40px auto;
-    padding: 0 20px;
+    max-width: 900px; /* Ancho máximo */
+    margin: 0 auto 40px auto; /* Centra horizontalmente */
+    padding: 0 20px; /* Espaciado interno */
 }
 
 .panel-resumen {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
-  padding: 28px 20px;
-  max-width: 340px;
-  min-width: 240px;
+  background: #fff; /* Fondo blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04); /* Sombra */
+  padding: 28px 20px; /* Espaciado interno */
+  max-width: 340px; /* Ancho máximo */
+  min-width: 240px; /* Ancho mínimo */
   margin: 0 0 0 auto; /* Esto lo alinea a la derecha */
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  color: #222;
+  display: flex; /* Flex para alinear los elementos */
+  flex-direction: column; /* En columna */
+  gap: 14px; /* Espacio entre elementos */
+  color: #222; /* Color oscuro */
   font-family: 'Roboto', sans-serif;
   align-self: flex-start; /* Se mantiene arriba */
 }
 
 .panel-resumen h3 {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #181818;
-  margin: 0 0 10px 0;
-  letter-spacing: 0.5px;
-  text-align: center;
+  font-size: 1.2em; /* Tamaño del texto */
+  font-weight: 600; /* Grosor de la fuente */
+  color: #181818; /* Color oscuro */
+  margin: 0 0 10px 0; /* Margen inferior */
+  letter-spacing: 0.5px; /* Espaciado entre letras */
+  text-align: center; /* Centra el texto */
 }
 
 .panel-resumen p {
-  margin: 0;
-  color: #444;
-  font-size: 1em;
-  text-align: left;
-  letter-spacing: 0.1px;
+  margin: 0; /* Sin margen */
+  color: #444; /* Color gris oscuro */
+  font-size: 1em; /* Tamaño del texto */
+  text-align: left; /* Alinea a la izquierda */
+  letter-spacing: 0.1px; /* Espaciado entre letras */
 }
 
 .panel-resumen strong {
-  color: #00c3ff;
-  font-weight: 700;
+  color: #00c3ff; /* Color azul */
+  font-weight: 700; /* Grosor de la fuente */
 }
 
 .btn-pagar {
-  margin-top: 12px;
-  background: #00c3ff;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 12px 0;
+  margin-top: 12px; /* Margen superior */
+  background: #00c3ff; /* Fondo azul */
+  color: #fff; /* Texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 12px 0; /* Espaciado interno */
   font-size: 1.1em;
   font-weight: 500;
   cursor: pointer;
